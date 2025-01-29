@@ -11,6 +11,10 @@ import 'package:h_l_s_application/features/auth/presentation/views/widgets/custo
 import 'package:h_l_s_application/features/auth/presentation/views/widgets/custom_password_form_text_field.dart';
 import 'package:h_l_s_application/features/auth/presentation/views/widgets/custom_form_text_field.dart';
 import 'package:h_l_s_application/features/auth/presentation/views/widgets/show_snack_bar.dart';
+<<<<<<< HEAD
+=======
+import 'package:h_l_s_application/features/detail_user/Age_Picker.dart';
+>>>>>>> d9e384d (h_l_s_applicatio_android)
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 class LoginPage extends StatefulWidget {
@@ -111,6 +115,14 @@ class _SignupPageState extends State<LoginPage> {
                         }
                         GoRouter.of(context)
                             .pushReplacement(AppRouter.kHomeView);
+<<<<<<< HEAD
+=======
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => AgeSelectionScreen()),
+                        );
+>>>>>>> d9e384d (h_l_s_applicatio_android)
                       },
                       text: "Login",
                     ),
