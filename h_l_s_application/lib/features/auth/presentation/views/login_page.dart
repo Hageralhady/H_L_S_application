@@ -6,15 +6,10 @@ import 'package:h_l_s_application/core/utils/app_router.dart';
 import 'package:h_l_s_application/core/utils/assets.dart';
 import 'package:h_l_s_application/core/utils/styles.dart';
 import 'package:h_l_s_application/features/auth/presentation/views/layouts/custom_login_decoration_row.dart';
-import 'package:h_l_s_application/features/auth/presentation/views/reset_password_screen.dart';
 import 'package:h_l_s_application/features/auth/presentation/views/widgets/custom_login_button.dart';
 import 'package:h_l_s_application/features/auth/presentation/views/widgets/custom_password_form_text_field.dart';
 import 'package:h_l_s_application/features/auth/presentation/views/widgets/custom_form_text_field.dart';
 import 'package:h_l_s_application/features/auth/presentation/views/widgets/show_snack_bar.dart';
-<<<<<<< HEAD
-=======
-import 'package:h_l_s_application/features/detail_user/Age_Picker.dart';
->>>>>>> d9e384d (h_l_s_applicatio_android)
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 class LoginPage extends StatefulWidget {
@@ -65,28 +60,10 @@ class _SignupPageState extends State<LoginPage> {
                       },
                     ),
                     const SizedBox(
-                      height: 8,
-                    ),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: TextButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => ResetPasswordScreen()),
-                          );
-                        },
-                        child: Text(
-                          "Forgot Password?",
-                          style: Styles.textStyle14.copyWith(
-                            color: kSecondaryColor,
-                          ),
-                        ),
-                      ),
+                      height: 24,
                     ),
                     const SizedBox(
-                      height: 24,
+                      height: 40,
                     ),
                     CustomLoginButton(
                       onPressed: () async {
@@ -112,17 +89,9 @@ class _SignupPageState extends State<LoginPage> {
                           }
                           isLoading = false;
                           setState(() {});
-                        }
+                        } else {}
                         GoRouter.of(context)
                             .pushReplacement(AppRouter.kHomeView);
-<<<<<<< HEAD
-=======
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => AgeSelectionScreen()),
-                        );
->>>>>>> d9e384d (h_l_s_applicatio_android)
                       },
                       text: "Login",
                     ),
@@ -163,6 +132,9 @@ class _SignupPageState extends State<LoginPage> {
                         ),
                       ],
                     ),
+                    // const Spacer(
+                    //   flex: 2,
+                    // ),
                     const SizedBox(
                       height: 64,
                     ),
@@ -207,7 +179,6 @@ class _SignupPageState extends State<LoginPage> {
     );
   }
 }
-
 
 
 /*
